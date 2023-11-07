@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Engagement Invitation</title>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap">
+  <!-- Bootstrap and CSS stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5a55ff50de.js" crossorigin="anonymous"></script>
+  <style>
+    /* Global styles */
+    body {
+      background-color: ivory;
+      margin: 0;
+      padding: 0;
+    }
+    .logo {
+      text-align: center;
+      padding: 20px;
+
+} 
+
+.logo img {
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+    /* Title section styles */
+  /* Title section styles */
+#title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Add some padding to create space around the image and text */
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.title-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title-text {
+  margin-top: 20px; /* Add margin between the image and text */
+  text-align: center;
+}
+
+.title-text p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: goldenrod;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+   
+
+    h1, h3, h4 {
+      /* Animations */
+  
+      font-family: 'Playfair Display', serif;
+     
+      color: goldenrod;
+      margin-bottom: 20px;
+    
+ 
+ 
+    }
+
+    p {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 1rem;
+      /* Additional styling for paragraphs if needed */
+    }
+
+    .title-content{
+      margin-top: 1px0;
+      text-align: center;
+    }
+
+    /* Feature section styles */
+    #features {
+      padding: 7% 15%;
+      background-color:ivory;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-box {
+      background-color: #fff;
+      padding: 3.5%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .feature-box:last-child {
+      margin-right: 0;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .icon {
+      color: hsl(43, 91%, 75%); /* Goldenish color */
+      margin-bottom: 1rem;
+    }
+
+    /* Testimonials section styles */
+    #testimonials {
+      padding: 7% 10%;
+      text-align: center;
+      background-color: ivory; /* Goldenish background color */
+      color: goldenrod;
+    }
+
+    .testimonial-image {
+      width: 25%;
+        border-radius: 50%;
+
+      /* border-radius: 55%; */
+      box-shadow: #c1a35a;
+    }
+
+    /* Pricing section styles */
+    #pricing {
+      padding: 7% 15%;
+      text-align: center;
+      background-color: goldenrod;
+    }
+
+    .pricing-column {
+      padding: 3%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .pricing-column:last-child {
+      margin-right: 0;
+    }
+
+    .card {
+      padding: 3%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-header {
+      background-color: #fff;
+      padding: 3%;
+      border-radius: 10px;
+     
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .card-header:last-child {
+      margin-right: 0;
+    }
+
+    .card-header {
+      padding: 3%;
+      border-radius: 10px;
+     
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .card-header:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-body {
+      padding: 3%;
+      border-radius: 10px;
+ 
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    /* Call to Action section styles */
+    #cta {
+      /* Light brown background color */
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .cta-heading h3 {
+      font-size: 2rem;
+      /* color: #c1a35a; Goldenish text color */
+      margin-bottom: 20px;
+    }
+  
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-blur {
+   /* Adjust the blur amount as needed */
+  width: 100%;
+  height: auto;
+}
+
+#cta{
+    background-color: ivory;
+}
+
+
+    /* RSVP buttons styles */
+    .rsvp-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(123, 110, 33); /* Goldenish background color */
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      margin-right: 10px;
+    }
+
+    .rsvp-button:hover {
+      background-color: #8b735b; /* Darker goldenish background color on hover */
+      transform: scale(1.05); /* Zoom effect on hover */
+    }
+
+    .whatsapp-button {
+      background-color: #25d366; /* WhatsApp green color */
+    }
+
+    .whatsapp-button:hover {
+      background-color: #128c7e; /* Darker WhatsApp green color on hover */
+    }
+
+    /* Footer styles */
+    #footer {
+      text-align: center;
+      background-color: ivory;
+      margin-top: 20px;
+    }
+ /* Make background image
+  it fit the screen */
+   
+
+    @media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo img {
+    margin-right: 0;
+  }
+}
+
+/* Media query for section #title for mobile version */
+
+@media (max-width: 768px) {
+  #title {
+    height: 40vh;
+  
+
+
+  }
+
+ 
+
+}
+
+
+  </style>
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.svg" alt="Logo" width="150px">
+      <br>
+      <h1>LET'S CELEBRATE JAY & MEGHA ON <br> NOVEMBER 19th, 2023</h1>
+    </div>
+    
+    <section id="title">
+      <div class="image-container">
+        <img src="mainimage.jpeg" alt="engagement" class="title-image">
+      </div>
+      <div class="title-text">
+        <p style="color: grey; font-weight: bold;">Two lives, two hearts, joined together in friendship, united forever in love. Jay and Megha are taking the next step on their journey and would be delighted to share the joy with you. Save the date for a day filled with love, laughter, and everlasting memories!</p>
+      </div>
+    </section>
+    
+ 
+
+  <!-- Features -->
+  <section id="features">
+    <div class="row">
+     
+      <div class="feature-box col-lg-4 col-md-12">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h2 style="font-weight: bold;">Jay's Story</h2>
+        <p style="color: grey;">Jay, born and raised in Mumbai, has always been a passionate soccer and cricket fan.
+          He came to Canada to pursue education and found love while working here.</p>
+      </div>
+
+      <div class="feature-box col-lg-4 col-md-12">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h2 style="font-weight: bold; font-size: 2rem;">Megha's Story</h2>
+        <p style="color: grey;">From the vibrant streets of Delhi to the serene landscapes of Abbotsford, Megha's
+          journey led her to discover love with Jay in Canada. Originally from Kerala and raised in Delhi, she shares a
+          deep appreciation for both North and South India</p>
+      </div>
+
+      <div class="feature-box col-lg-4 col=md-12">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+    <h2 style="font-weight: bold; font-size: 2rem;">Our Love Story.</h2>
+        <p style="color: grey;">Jay and Megha's journey began as colleagues, but it didn't take long for their
+          friendship to turn into something extraordinary. Five wonderful years later, their love story continues to
+          flourish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use carousel in Testimonials -->
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <p style=" font-weight: bold; margin-bottom: 20px;  font-size: 2rem;">Join Us for a Story Unfolding: Jay & Megha's Engagement</p>
+        <div class="carousel-item active">
+          <img
+            src="logo.svg"
+            alt="engagement" class="testimonial-image">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+   
+     <div class = "row">
+       <div class="pricing-column col-lg-4 col-md-6">
+         <div class="card">
+            <div class="card-header"> 
+             <h3>Date</h3>
+           </div>
+            <img src="https://m.media-amazon.com/images/I/71BFv8+vEoL.jpg" alt="engagement" class="image-blur"> 
+          <div class="card-body">
+            <p style="color: grey;">November 19th</p>
+            </div>
+         </div>
+       </div>
+       
+       <div class="pricing-column col-lg-4 col-md-6">
+         <div class="card">
+           <div class="card-header">
+             <h3>Time</h3>
+           </div>
+           <!-- Background Image -->
+            <img src="time.jpg" alt="engagement" class="image-blur"> 
+           <div class="card-body">
+            <p style="color: grey;">11:30 am</p>
+            </div>
+         </div>
+       </div>
+   
+       
+   
+   <div class="pricing-column col-lg-4 col-md-12">
+     <div class="card">
+       <div class="card-header">
+         <h3>Location</h3>
+       </div>
+       <!-- Background Image -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFusgo0qnpLZXvQC0_OJy578G5BeQKTAwVi8_AbSrL2nY0TQay59fIzgjvhQilYskLAnU&usqp=CAU" alt="engagement" class="image-blur"> 
+       <div class="card-body">
+   
+         <p style="color: grey;">Hotel Hills Park, Pathanamthitta, Kerala</p>
+        
+         
+       </div>
+     </div>
+   </div>
+      </section>
+   
+
+     <!-- Call to Action -->
+<section id="cta">
+   
+      </h5>
+      <!-- RSVP button -->
+      <section class="rsvp">
+        <div class="col-12 text-center" >
+          <h3>We will be thrilled if you can join us!</h3>
+        </div>
+       
+</section>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>Made with <i class="fas fa-heart"></i> by Reet</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
